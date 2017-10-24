@@ -9,6 +9,13 @@
     },
     {
       "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome",
+      "url": "http://localhost:5000",
+      "webRoot": "${workspaceRoot}"
+    },
+    {
+      "type": "chrome",
       "request": "attach",
       "name": "Attach to Chrome",
       "port": 9222,
