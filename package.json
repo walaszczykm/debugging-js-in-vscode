@@ -1,15 +1,19 @@
 {
-  "name": "DebuggingJS",
+  "name": "debugging-js",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "babel:es5": "babel ./sourcemaps/example.es5.js --minified > ./sourcemaps/example.es5.min.js",
+    "babel:es6": "babel ./sourcemaps/example.es6.js --minified > ./sourcemaps/example.es6.min.js",
+    "babel:es5-map": "babel ./sourcemaps/example.es5.js --minified --source-maps > ./sourcemaps/example.es5.min.js",
+    "babel:es6-map": "babel ./sourcemaps/example.es6.js --minified --source-maps > ./sourcemaps/example.es6.min.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "express": "^4.16.2",
     "vlq": "^0.2.3"
