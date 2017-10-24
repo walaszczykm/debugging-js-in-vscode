@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "babel:es5": "babel ./sourcemaps/example.es5.js --minified > ./sourcemaps/example.es5.min.js",
-    "babel:es6": "babel ./sourcemaps/example.es6.js --minified > ./sourcemaps/example.es6.min.js",
-    "babel:es5-map": "babel ./sourcemaps/example.es5.js --minified --source-maps > ./sourcemaps/example.es5.min.js",
-    "babel:es6-map": "babel ./sourcemaps/example.es6.js --minified --source-maps > ./sourcemaps/example.es6.min.js"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
